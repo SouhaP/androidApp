@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".AddEditContact">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/fab_content_description"
+        android:src="@drawable/baseline_add_24"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="140dp"
+            android:layout_height="239dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_account_circle_24"
+            app:civ_border_color="@color/my_light_primary"
+            app:civ_border_width="3dp" />
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_abc_24"
+            android:drawablePadding="5dp"
+            android:hint="@string/Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+            android:autofillHints="phone"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_add_call_24"
+            android:drawablePadding="5dp"
+            android:hint="@string/Phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_alternate_email_24"
+            android:drawablePadding="5dp"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="14sp" />
+        <Spinner
+            android:id="@+id/groupSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:spinnerMode="dropdown"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/noteEt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+            android:autofillHints="note"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_add_comment_24"
+            android:drawablePadding="5dp"
+            android:hint="@string/Note"
+            android:inputType="textLongMessage"
+            android:padding="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>
